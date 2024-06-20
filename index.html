@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<title>
+		</title>
+		<style>
+			body { font-family:Calibri; font-size:12pt }
+			p { margin:0pt }
+		</style>
+	</head>
+	<body>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;!DOCTYPE html&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;html lang="en"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;head&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;meta charset="UTF-8"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;title&gt;App Redirect&lt;/title&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;script&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">function redirect() {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">var userAgent = navigator.userAgent || navigator.vendor || window.opera;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">if (/android/i.test(userAgent)) {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">window.location.href = "https://play.google.com/store/apps/details?id=com.spyglasstudios.glm2&amp;pcampaignid=web_share";</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">} else if (/iPad|iPhone|iPod/.test(userAgent) &amp;&amp; !window.MSStream) {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">window.location.href = "https://apps.apple.com/us/app/gull-lake-ministries/id6480063037";</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">} else {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">window.location.href = "https://gulllake.org/";</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">window.onload = redirect;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/script&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;/head&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;body&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p&gt;Redirecting to the appropriate app store...&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;/body&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;/html&gt;</span>
+			</p>
+	<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a></p>
+</body>
+</html>
