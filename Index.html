@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Redirect</title>
+    <script>
+        function redirect() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            
+            if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.spyglasstudios.glm2&pcampaignid=web_share";
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://apps.apple.com/us/app/gull-lake-ministries/id6480063037";
+            } else {
+                window.location.href = "https://gulllake.org/";
+            }
+        }
+
+        window.onload = redirect;
+    </script>
+</head>
+<body>
+    <p>Redirecting to the appropriate app store...</p>
+</body>
+</html>
